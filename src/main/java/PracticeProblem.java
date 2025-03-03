@@ -30,13 +30,13 @@ public class PracticeProblem {
 
 	}
 
-	final static int MAX_VALUE = 10;
+	final static int MAXIMUM = 10;
 	public static boolean totalWordsChecker(String word) {
 
 		boolean isMax = false;
-		String[] wordCount = word.split("[ ,./;({<-]");
+		String[] wordCount = word.split("[,\\/ \\; \\ \\( \\[ \\{ \\< \\-]");
 
-		if (wordCount.length <= MAX_VALUE) {
+		if (wordCount.length <= MAXIMUM) {
 			isMax = true;
 		}
 
